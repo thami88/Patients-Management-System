@@ -41,7 +41,7 @@ public class Patient {
 			}
 			
 			//  Prepare the html table to be displayed
-			output = "<table border='1'><tr><th>Patient ID</th><th>Patient NIC</th><th>Patient Name</th><th>Patient Address</th>"
+			output = "<table border='1'><tr><th>Patient NIC</th><th>Patient Name</th><th>Patient Address</th>"
 					+ "<th>Patient Email</th><th>Patient Telephone</th><th>Patient Age</th><th>Patient Status</th>"
 					+ "<th>Patient Allergic</th><th>Patient Ward</th><th>Patient Bed</th> <th>Update</th><th>Remove</th></tr>";
 			
@@ -248,4 +248,4 @@ public class Patient {
 		
 	}
 
-}
+} // End Patient Class
