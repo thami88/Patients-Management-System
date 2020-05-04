@@ -53,6 +53,13 @@ public class PatientsAPI extends HttpServlet {
 	 */
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+		Map paras = getParasMap(request);
+		
+		String output = patientObj.updatePatient(paras.get("hidPatientIDSave").toString(), paras.get("pNic").toString(), paras.get("pName").toString(), paras.get("pAddress").toString(), paras.get("pEmail").toString(), paras.get("pTele").toString(), paras.get("pAge").toString(), paras.get("pStatus").toString(), paras.get("pAllergic").toString(), paras.get("pWard").toString(), paras.get("pBed").toString());
+		
+		response.getWriter().write(output);
+		
 	}
 
 	/**
@@ -60,6 +67,7 @@ public class PatientsAPI extends HttpServlet {
 	 */
 	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
 	}
 	
 	// Convert request parameters to a Map
