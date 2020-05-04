@@ -151,5 +151,57 @@ public class Patient {
 		return output;
 		
 	} // End of Insert Method /------------------------------------------------------------------------
+	
+	// Update Method /---------------------------------------------------------------------------------
+	
+	public String updatePatient(String ID, String nic, String name, String address, String email, String tele, String age, String status, String allergic, String ward, String bed) {
+		
+		String output = "";
+		
+		try {
+			
+			Connection con = connect();
+			
+			if (con == null) {
+				
+				return "Error while connecting to the database for Updating.";
+				
+			}
+			
+			// Create a prepared statement
+			String query = "UPDATE patients SET pNic=?,pName=?,pAddress=?,pEmail=?,pTele=?,pAge=?,pStatus=?,pAllergic=?,pWard=?,pBed=? WHERE pID=?";
+			
+			PreparedStatement preparedStmt = con.prepareStatement(query);
+			
+			// Binding Values
+			preparedStmt.setString(1, nic);
+			preparedStmt.setString(2, name);
+			preparedStmt.setString(3, address);
+			preparedStmt.setString(4, email);
+			preparedStmt.setString(5, tele);
+			preparedStmt.setInt(6, Integer.parseInt(age));
+			preparedStmt.setString(7, status);
+			preparedStmt.setString(8, allergic);
+			preparedStmt.setString(9, ward);
+			preparedStmt.setInt(10, Integer.parseInt(bed));
+			preparedStmt.setInt(11, Integer.parseInt(ID));
+			
+			// Execute the statement
+			preparedStmt.execute();
+			con.close();
+			
+			String newPatients = readPatients();
+			output = "{\"status\":\"success\", \"data\": \"" + newPatients + "\"}";
+			
+		} catch (Exception e) {
+			
+			// Handle exception
+			output = "{\"status\":\"error\", \"data\": \"Error while updating the Patient.\"}"; 
+			System.err.println(e.getMessage());
+		}
+		
+		return output;
+		
+	} // End of the Update Method /---------------------------------------------------------------------
 
 }
