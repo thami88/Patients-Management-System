@@ -29,7 +29,7 @@ public class PatientsAPI extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		// response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -37,7 +37,11 @@ public class PatientsAPI extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		// doGet(request, response);
+		
+		String output = patientObj.insertPatient(request.getParameter("pNic"), request.getParameter("pName"), request.getParameter("pAddress"), request.getParameter("pEmail"), request.getParameter("pTele"), request.getParameter("pAge"), request.getParameter("pStatus"), request.getParameter("pAllergic"), request.getParameter("pWard"), request.getParameter("pBed"));
+		response.getWriter().write(output);
+		
 	}
 
 	/**
