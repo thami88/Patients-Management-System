@@ -203,5 +203,49 @@ public class Patient {
 		return output;
 		
 	} // End of the Update Method /---------------------------------------------------------------------
+	
+	
+	// Delete Method /----------------------------------------------------------------------------------
+	
+	public String deletePatient(String pID) {
+		
+		String output = "";
+		
+		try {
+			
+			Connection con = connect();
+			
+			if (con == null) {
+				
+				return "Error while connecting to the database for Deleting.";
+				
+			}
+			
+			// Create a Prepared Statement
+			String query = "delete from patients where pID=?";
+			
+			PreparedStatement preparedStmt = con.prepareStatement(query);
+			
+			// Binding Values
+			preparedStmt.setInt(1, Integer.parseInt(pID));
+			
+			// Execute the Statement
+			preparedStmt.execute();
+			con.close();
+			
+			String newPatients = readPatients();
+			output = "{\"status\":\"success\", \"data\": \"" + newPatients + "\"}";
+			
+			
+		} catch (Exception e) {
+			
+			// Handle exception
+			output = "{\"status\":\"error\", \"data\": \"Error while deleting the Patient.\"}"; 
+			System.err.println(e.getMessage());
+		}
+		
+		return output;
+		
+	}
 
 }
