@@ -8,6 +8,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Patients Management</title>
+<link rel="stylesheet" href="Views/bootstrap.min.css">
+<script src="Components/jquery-3.5.0.min.js"></script>
+<script src="Components/patients.js"></script>
 </head>
 <body>
 
