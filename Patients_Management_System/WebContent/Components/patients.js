@@ -144,3 +144,52 @@ function onPatientDeleteComplete(response, status){
 	}
 	
 }
+
+
+//CLIENT-MODEL==================================================================================
+function validatePatientForm() {
+	// NIC
+	if ($("#pNic").val().trim() == "") {
+		return "Insert Patient NIC.";
+	}
+	// NAME
+	if ($("#pName").val().trim() == "") {
+		return "Insert Patient Name.";
+	}
+	// Address-------------------------------
+	if ($("#pAddress").val().trim() == "") {
+		return "Insert Patient Address.";
+	}
+	// Email-------------------------------
+	if ($("#pEmail").val().trim() == "") {
+		return "Insert Patient Email.";
+	}
+	// is numerical value for pTele
+	var tmpTele = $("#pTele").val().trim();
+	if (!$.isNumeric(tmpTele)) {
+		return "Insert a numerical value for Tele.";
+	}
+	// is numerical value for age
+	var tmpAge = $("#pAge").val().trim();
+	if (!$.isNumeric(tmpAge)) {
+		return "Insert a numerical value for Age.";
+	}
+	// Status------------------------
+	if ($("#pStatus").val().trim() == "") {
+		return "Insert Patient Status.";
+	}
+	// Allergic------------------------
+	if ($("#pAllergic").val().trim() == "") {
+		return "Insert Patient Allergic.";
+	}
+	// Ward------------------------
+	if ($("#pWard").val().trim() == "") {
+		return "Insert Patient Ward.";
+	}
+	// is numerical value for Bed
+	var tmpBed = $("#pBed").val().trim();
+	if (!$.isNumeric(tmpBed)) {
+		return "Insert a numerical value for Bed.";
+	}
+	return true;
+}
