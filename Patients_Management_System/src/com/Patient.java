@@ -77,7 +77,7 @@ public class Patient {
 				 output += "<td>" + pBed + "</td>"; 
 				
 				// Update Delete Buttons
-				output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary'></td><td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-pid='" + pID + "'>" + "</td></tr>"; 
+				output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary btn-sm'></td><td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger btn-sm' data-pid='" + pID + "'>" + "</td></tr>"; 
 				
 			}
 			
