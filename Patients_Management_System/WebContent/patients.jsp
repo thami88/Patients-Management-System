@@ -19,7 +19,7 @@
 <body>
 
 
-	<!-- ------------------------ Navbar---------------------------------- -->
+	<!-- ------------------------ Navigation Bar ---------------------------------- -->
 	
 	<nav
 		class="navbar fixed-top navbar-expand-lg navbar-dark special-color-dark">
@@ -49,8 +49,6 @@
 	<!-- ---------------------------- End of Nav ----------------------------- -->
 
 
-<!-- ------------------- Form to Add Details------------------ -->
-
 	<div class="container-fluid">
 	
 	<!-- ---------------------------- Start of Jumborone ----------------------------- -->
@@ -70,6 +68,8 @@
 		</div>
 		
    	<!-- ---------------------------- End of Jumborone ----------------------------- -->
+   	
+   	<!-- ------------------- Form to Add Details ------------------ -->
 	
 	<div class="container">
 	<div class="row">
@@ -78,17 +78,27 @@
 		<form id="formPatient" name="formPatient" class="text-center border border-light p-5">
 		
 				<p class="h4 mb-4">Add / Update Patients</p>
-		
-			 <input id="pNic" name="pNic" type="text" class="form-control form-control-sm" placeholder="Patient NIC:"><br>
-			 <input id="pName" name="pName" type="text" class="form-control form-control-sm" placeholder="Patient Name:"><br>
-			 <input id="pAddress" name="pAddress" type="text" class="form-control form-control-sm" placeholder="Patient Address:"><br>
-			 <input id="pEmail" name="pEmail" type="text" class="form-control form-control-sm" placeholder="Patient Email:"><br>
-			 <input id="pTele" name="pTele" type="text" class="form-control form-control-sm" placeholder="Patient Telephone:"><br>
-			 <input id="pAge" name="pAge" type="text" class="form-control form-control-sm" placeholder="Patient Age:"><br>
-			 <input id="pStatus" name="pStatus" type="text" class="form-control form-control-sm" placeholder="Patient Status:"><br>
-			 <input id="pAllergic" name="pAllergic" type="text" class="form-control form-control-sm" placeholder="Patient Allergic:"><br>
-			 <input id="pWard" name="pWard" type="text" class="form-control form-control-sm" placeholder="Patient Ward:"><br>
-			 <input id="pBed" name="pBed" type="text" class="form-control form-control-sm" placeholder="Patient Bed:"><br>
+				
+		     <div class="d-flex justify-content-center">
+			 	<input id="pNic" name="pNic" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient NIC:"></div><br>
+			 <div class="d-flex justify-content-center">
+			 	<input id="pName" name="pName" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Name:"></div><br>
+			 <div class="d-flex justify-content-center">
+			 	<input id="pAddress" name="pAddress" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Address:"></div><br>
+			 <div class="d-flex justify-content-center">
+			 	<input id="pEmail" name="pEmail" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Email:"></div><br>
+			 <div class="d-flex justify-content-center">
+			 	<input id="pTele" name="pTele" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Telephone:"></div><br>
+			 <div class="d-flex justify-content-center">
+			 	<input id="pAge" name="pAge" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Age:"></div><br>
+			 <div class="d-flex justify-content-center">
+			 	<input id="pStatus" name="pStatus" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Status:"></div><br>
+			 <div class="d-flex justify-content-center">
+			 	<input id="pAllergic" name="pAllergic" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Allergic:"></div><br>
+			 <div class="d-flex justify-content-center">
+			 	<input id="pWard" name="pWard" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Ward:"></div><br>
+			 <div class="d-flex justify-content-center">
+			 	<input id="pBed" name="pBed" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Bed:"></div><br>
 		
 			<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-dark-green">
 			<input type="hidden" id="hidPatientIDSave" name="hidPatientIDSave"  value="">
