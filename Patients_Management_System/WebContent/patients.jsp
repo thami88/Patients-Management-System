@@ -36,9 +36,7 @@
 			<!-- Links -->
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item "><a class="nav-link" href="#">Home </a></li>
-				<li class="nav-item active"><a class="nav-link" href="#">Patients
-						Management<span class="sr-only">(current)</span>
-				</a></li>
+				<li class="nav-item active"><a class="nav-link" href="#">Patients Management<span class="sr-only">(current)</span></a></li>
 				<li class="nav-item"><a class="nav-link" href="#">About</a></li>
 			</ul>
 			<!-- Links -->
@@ -46,7 +44,7 @@
 		<!-- Collapsible content -->
 	</nav><br>
 
-	<!-- ---------------------------- End of Nav ----------------------------- -->
+	<!-- ---------------------------- End of Navigation Bar ----------------------------- -->
 
 
 	<div class="container-fluid">
@@ -105,13 +103,22 @@
 		
 		</form><br>
 		
+		<!-- ----------------------------------- End of Form -------------------------------- -->
+		
+			
+		<!-- ----------------------------------- success & Error alert -------------------------------- -->
+		
 		<div id="alertSuccess" class="alert alert-success"></div>
 		<div id="alertError" class="alert alert-danger"></div><br>
+		
+		<!-- ----------------------------------- End of success & Error alert -------------------------------- -->
 		
 	</div> <!-- End of Column -->
 	</div> <!-- End of Row -->
 	</div> <!-- End of Form Container -->
 	</div> <!-- End of Fluid Container -->
+	
+	<!-- ----------------------------------- Table -------------------------------- -->
 	
 	<div class="container-fluid">
 		<div class="row">
@@ -132,13 +139,13 @@
 		
 
 	
-	<!-- ----------------------------------- End of Form -------------------------------- -->
+	<!-- ----------------------------------- End of Table -------------------------------- -->
 	
 	<!-- --------------------------- Footer -------------------------- -->
 		<footer class="page-footer font-small special-color-dark pt-4">
 
 		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">Items Management</div>
+		<div class="footer-copyright text-center py-3">Patients Management</div>
 		<!-- Copyright -->
 
 	</footer>
