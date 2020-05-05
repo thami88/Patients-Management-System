@@ -9,6 +9,10 @@
 <meta charset="ISO-8859-1">
 <title>Patients Management</title>
 <link rel="stylesheet" href="Views/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
 <script src="Components/jquery-3.5.0.min.js"></script>
 <script src="Components/patients.js"></script>
 </head>
