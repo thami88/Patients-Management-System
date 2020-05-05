@@ -90,7 +90,7 @@
 			 <input id="pWard" name="pWard" type="text" class="form-control form-control-sm" placeholder="Patient Ward:"><br>
 			 <input id="pBed" name="pBed" type="text" class="form-control form-control-sm" placeholder="Patient Bed:"><br>
 		
-			<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary">
+			<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-dark-green">
 			<input type="hidden" id="hidPatientIDSave" name="hidPatientIDSave"  value="">
 		
 		</form><br>
