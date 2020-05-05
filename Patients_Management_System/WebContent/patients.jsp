@@ -93,7 +93,7 @@
 			<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary">
 			<input type="hidden" id="hidPatientIDSave" name="hidPatientIDSave"  value="">
 		
-		</form>
+		</form><br>
 		
 		<div id="alertSuccess" class="alert alert-success"></div>
 		<div id="alertError" class="alert alert-danger"></div><br>
