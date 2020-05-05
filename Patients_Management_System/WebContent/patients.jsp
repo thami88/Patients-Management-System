@@ -44,30 +44,51 @@
 			<!-- Links -->
 		</div>
 		<!-- Collapsible content -->
-	</nav>
+	</nav><br>
 
 	<!-- ---------------------------- End of Nav ----------------------------- -->
 
 
 <!-- ------------------- Form to Add Details------------------ -->
 
+	<div class="container-fluid">
+	
+	<!-- ---------------------------- Start of Jumborone ----------------------------- -->
+			<div class="row">
+			<div class="col">
+				<div class="jumbotron card card-image mt-5"
+					style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+					<div class="text-white text-center py-5 px-4">
+						<div>
+							<h2 class="card-title h1-responsive pt-3 mb-5 font-bold">
+								<strong>Patients Management</strong>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+   	<!-- ---------------------------- End of Jumborone ----------------------------- -->
+	
 	<div class="container">
 	<div class="row">
-	<div class="col-6">
-		<h1>Patients Management</h1>
+	<div class="col">
 		
-		<form id="formPatient" name="formPatient">
+		<form id="formPatient" name="formPatient" class="text-center border border-light p-5">
 		
-			Patient NIC: <input id="pNic" name="pNic" type="text" class="form-control form-control-sm"><br>
-			Patient Name: <input id="pName" name="pName" type="text" class="form-control form-control-sm"><br>
-			Patient Address: <input id="pAddress" name="pAddress" type="text" class="form-control form-control-sm"><br>
-			Patient Email: <input id="pEmail" name="pEmail" type="text" class="form-control form-control-sm"><br>
-			Patient Telephone: <input id="pTele" name="pTele" type="text" class="form-control form-control-sm"><br>
-			Patient Age: <input id="pAge" name="pAge" type="text" class="form-control form-control-sm"><br>
-			Patient Status: <input id="pStatus" name="pStatus" type="text" class="form-control form-control-sm"><br>
-			Patient Allergic: <input id="pAllergic" name="pAllergic" type="text" class="form-control form-control-sm"><br>
-			Patient Ward: <input id="pWard" name="pWard" type="text" class="form-control form-control-sm"><br>
-			Patient Bed: <input id="pBed" name="pBed" type="text" class="form-control form-control-sm"><br>
+				<p class="h4 mb-4">Add / Update Patients</p>
+		
+			 <input id="pNic" name="pNic" type="text" class="form-control form-control-sm" placeholder="Patient NIC:"><br>
+			 <input id="pName" name="pName" type="text" class="form-control form-control-sm" placeholder="Patient Name:"><br>
+			 <input id="pAddress" name="pAddress" type="text" class="form-control form-control-sm" placeholder="Patient Address:"><br>
+			 <input id="pEmail" name="pEmail" type="text" class="form-control form-control-sm" placeholder="Patient Email:"><br>
+			 <input id="pTele" name="pTele" type="text" class="form-control form-control-sm" placeholder="Patient Telephone:"><br>
+			 <input id="pAge" name="pAge" type="text" class="form-control form-control-sm" placeholder="Patient Age:"><br>
+			 <input id="pStatus" name="pStatus" type="text" class="form-control form-control-sm" placeholder="Patient Status:"><br>
+			 <input id="pAllergic" name="pAllergic" type="text" class="form-control form-control-sm" placeholder="Patient Allergic:"><br>
+			 <input id="pWard" name="pWard" type="text" class="form-control form-control-sm" placeholder="Patient Ward:"><br>
+			 <input id="pBed" name="pBed" type="text" class="form-control form-control-sm" placeholder="Patient Bed:"><br>
 		
 			<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary">
 			<input type="hidden" id="hidPatientIDSave" name="hidPatientIDSave"  value="">
@@ -77,6 +98,17 @@
 		<div id="alertSuccess" class="alert alert-success"></div>
 		<div id="alertError" class="alert alert-danger"></div><br>
 		
+	</div> <!-- End of Column -->
+	</div> <!-- End of Row -->
+	</div> <!-- End of Form Container -->
+	</div> <!-- End of Fluid Container -->
+	
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			
+			<p class="h4 text-center mb-4">Manage Patients</p>
+		
 		<div id="divPatientsGrid">
 			<%
 				Patient patientObj = new Patient();
@@ -84,9 +116,11 @@
 			%>
 		</div>
 		
-	</div> <!-- End of Column -->
-	</div> <!-- End of Row -->
-	</div> <!-- End of Container -->
+		</div> <!-- End of Column -->
+		</div> <!-- End of 2nd Row -->
+		</div> <!-- End of Table Container -->
+		
+
 	
 	<!-- ----------------------------------- End of Form -------------------------------- -->
 	
