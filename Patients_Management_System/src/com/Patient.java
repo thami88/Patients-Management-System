@@ -65,7 +65,7 @@ public class Patient {
 				 String pBed = Integer.toString(rs.getInt("pBed"));
 				
 				// Add into the html table
-				output += "<tr><td><input id='hidItemIDUpdate' name='hidItemIDUpdate' type='hidden' value='" + pID + "'>" + pNic + "</td>";
+				output += "<tr><td><input id='hidPatientIDUpdate' name='hidPatientIDUpdate' type='hidden' value='" + pID + "'>" + pNic + "</td>";
 				 output += "<td>" + pName + "</td>";
 				 output += "<td>" + pAddress + "</td>";
 				 output += "<td>" + pEmail + "</td>";
@@ -77,7 +77,7 @@ public class Patient {
 				 output += "<td>" + pBed + "</td>"; 
 				
 				// Update Delete Buttons
-				output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary'></td><td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-itemid='" + pID + "'>" + "</td></tr>"; 
+				output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary'></td><td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-pid='" + pID + "'>" + "</td></tr>"; 
 				
 			}
 			
