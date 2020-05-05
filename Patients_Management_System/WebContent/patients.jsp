@@ -103,7 +103,7 @@
 	</div> <!-- End of Form Container -->
 	</div> <!-- End of Fluid Container -->
 	
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
 			
