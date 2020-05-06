@@ -84,9 +84,9 @@
 			 <div class="d-flex justify-content-center">
 			 	<input id="pAddress" name="pAddress" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Address:"></div><br>
 			 <div class="d-flex justify-content-center">
-			 	<input id="pEmail" name="pEmail" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Email:"></div><br>
+			 	<input id="pEmail" name="pEmail" type="email" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Email:"></div><br>
 			 <div class="d-flex justify-content-center">
-			 	<input id="pTele" name="pTele" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Telephone:"></div><br>
+			 	<input id="pTele" name="pTele" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Telephone:"></div><br>
 			 <div class="d-flex justify-content-center">
 			 	<input id="pAge" name="pAge" type="text" class="form-control form-control-sm" style="width: 300px;" placeholder="Patient Age:"></div><br>
 			 <div class="d-flex justify-content-center">
