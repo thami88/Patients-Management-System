@@ -103,10 +103,10 @@
 		
 		</form><br>
 		
-		<!-- ----------------------------------- End of Form -------------------------------- -->
+		<!-- ---------------------------------------- End of Form ------------------------------------------- -->
 		
 			
-		<!-- ----------------------------------- success & Error alert -------------------------------- -->
+		<!-- ----------------------------------- success & Error alert --------------------------------------- -->
 		
 		<div id="alertSuccess" class="alert alert-success"></div>
 		<div id="alertError" class="alert alert-danger"></div><br>
@@ -134,7 +134,7 @@
 		</div>
 		
 		</div> <!-- End of Column -->
-		</div> <!-- End of 2nd Row -->
+		</div> <!-- End of Row -->
 		</div> <!-- End of Table Container -->
 		
 
